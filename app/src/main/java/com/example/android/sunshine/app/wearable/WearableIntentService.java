@@ -24,6 +24,8 @@ import com.google.android.gms.wearable.Wearable;
 import java.io.ByteArrayOutputStream;
 
 /**
+ * This service is triggered to update the wearable watch face when weather data is sync
+ *
  * Created by perklun on 1/17/2016.
  */
 public class WearableIntentService extends IntentService implements DataApi.DataListener,

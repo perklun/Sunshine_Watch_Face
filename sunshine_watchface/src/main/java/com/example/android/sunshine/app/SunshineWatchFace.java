@@ -169,14 +169,6 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             mTextPaint = createTextPaint(resources.getColor(R.color.digital_text));
 
             mTime = new Time();
-            /**
-            watchFaceService.setUpdateUIListener(new WatchFaceService.UpdateUIListener() {
-                @Override
-                public void updateUI() {
-                    Log.i(TAG, "Updating UI invalidate...");
-                    invalidate();
-                }
-            });**/
 
         }
 

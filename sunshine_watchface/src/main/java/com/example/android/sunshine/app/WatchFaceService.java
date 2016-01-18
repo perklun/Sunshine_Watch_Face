@@ -8,20 +8,13 @@ import com.google.android.gms.wearable.DataMap;
 import com.google.android.gms.wearable.DataMapItem;
 import com.google.android.gms.wearable.WearableListenerService;
 
+/**
+ * This is an example of a wearable listener service but it is current not in use
+ * The DataApiListener is used in SunshineWatchFace instead
+ */
 public class WatchFaceService extends WearableListenerService {
     private static final String TAG = "LIST";
 
-    /**
-    private UpdateUIListener updateUIListener;
-
-    public WatchFaceService(){
-        this.updateUIListener = null;
-    }
-
-    public void setUpdateUIListener(UpdateUIListener updateUIListener) {
-        this.updateUIListener = updateUIListener;
-    }
-    **/
     @Override
     public void onDataChanged(DataEventBuffer dataEvents) {
         for (DataEvent dataEvent : dataEvents) {
@@ -34,10 +27,6 @@ public class WatchFaceService extends WearableListenerService {
             }
         }
     }
-    /**
-    public interface UpdateUIListener{
-        public void updateUI();
-    }
-     **/
+
 
 }
